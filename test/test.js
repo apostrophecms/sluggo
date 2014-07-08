@@ -21,4 +21,8 @@ describe('sluggo', function() {
     var s = sluggo('Monkeys Are Elaborate Fools');
     assert.equal(s, 'monkeys-are-elaborate-fools');
   });
+  it('behaves sensibly when only the allowed punctuation character is present', function() {
+    var s = sluggo('/', { allowed: '/' });
+    assert.equal(s, '/');
+  });
 });

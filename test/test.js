@@ -17,4 +17,8 @@ describe('sluggo', function() {
     var s = sluggo('monkey-s-are-elab-orate-fools');
     assert.equal(s, 'monkey-s-are-elab-orate-fools');
   });
+  it('converts to lowercase', function() {
+    var s = sluggo('Monkeys Are Elaborate Fools');
+    assert.equal(s, 'monkeys-are-elaborate-fools');
+  });
 });

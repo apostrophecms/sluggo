@@ -61,7 +61,7 @@ var sluggo = function(s, options) {
         n += separator;
       }
     } else {
-      n += String.fromCharCode(code);
+      n += s.charAt(i).toLowerCase();
     }
     lastBad = bad;
   }

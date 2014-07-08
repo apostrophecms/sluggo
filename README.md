@@ -68,6 +68,10 @@ Feel free to open issues on [github](http://github.com/punkave/sluggo).
 
 ## Changelog
 
+### CHANGES IN 0.1.2
+
+Converts to lowercase properly.
+
 ### CHANGES IN 0.1.1
 
 Packaged correctly to work in either node or the browser.

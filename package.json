@@ -1,0 +1,24 @@
+{
+  "name": "sluggo",
+  "version": "0.0.1",
+  "description": "High-speed, unicode-aware, browser-friendly slug generator",
+  "main": "sluggo.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/punkave/sluggo"
+  },
+  "keywords": [
+    "slug",
+    "unicode",
+    "slugs"
+  ],
+  "author": "P'unk Avenue LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/punkave/sluggo/issues"
+  },
+  "homepage": "https://github.com/punkave/sluggo"
+}

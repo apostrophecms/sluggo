@@ -1,6 +1,6 @@
 {
   "name": "sluggo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "High-speed, unicode-aware, browser-friendly slug generator",
   "main": "sluggo.js",
   "scripts": {

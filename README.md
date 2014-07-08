@@ -52,6 +52,8 @@ monkey,s,are,elab؉؉orate,fools
 
 You just want `sluggo.js`. Add that file to your frontend javascript world.
 
+Now you can call the `sluggo()` function anywhere.
+
 You do NOT need `generator.js`, which we will use when the next version of Unicode comes out to update this module.
 
 ## About P'unk Avenue and Apostrophe

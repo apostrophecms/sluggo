@@ -38,7 +38,7 @@ You can change the separator and specify a single punctuation character to be to
 ```javascript
 var sluggo = require('sluggo');
 
-var s = sluggo('@ monkey\'s are elab؉؉orate fools##', { separator: ',', allowed: '؉'});
+var s = sluggo('@ monkey\'s are elab؉؉orate fools##', { separator: ',', allow: '؉'});
 console.log(s);
 ```
 
@@ -67,6 +67,10 @@ Feel free to open issues on [github](http://github.com/punkave/sluggo).
 <a href="http://punkave.com/"><img src="https://raw.github.com/punkave/sluggo/master/logos/logo-box-builtby.png" /></a>
 
 ## Changelog
+
+### CHANGES IN 0.2.0
+
+Whoops, the classic apostrophe slugify method accepted `allow`, not `allowed`. We just released this today, so I've switched to `allow` in `sluggo` as well. However I did bump to 0.2.0 to remain faithful to the semver standard.
 
 ### CHANGES IN 0.1.2
 

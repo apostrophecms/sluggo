@@ -10,7 +10,7 @@ describe('sluggo', function() {
     assert.equal(s, 'monkey-s-are-elab-orate-fools');
   });
   it('slugifies a complex unicode string with allowed punctuation and a different separator', function() {
-    var s = sluggo('@ monkey\'s are elab؉؉orate fools##', { separator: ',', allowed: '؉'});
+    var s = sluggo('@ monkey\'s are elab؉؉orate fools##', { separator: ',', allow: '؉'});
     assert.equal(s, 'monkey,s,are,elab؉؉orate,fools');
   });
   it('behaves sensibly with existing slugs', function() {
@@ -22,7 +22,7 @@ describe('sluggo', function() {
     assert.equal(s, 'monkeys-are-elaborate-fools');
   });
   it('behaves sensibly when only the allowed punctuation character is present', function() {
-    var s = sluggo('/', { allowed: '/' });
+    var s = sluggo('/', { allow: '/' });
     assert.equal(s, '/');
   });
 });

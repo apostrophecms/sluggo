@@ -94,18 +94,18 @@ Feel free to [open issues on Github](http://github.com/apostrophecms/sluggo/issu
 - Updates package.json with new metadata
 - Updates README.
 
-### CHANGES IN 0.2.0
+### 0.2.0
 
 Whoops, the classic apostrophe slugify method accepted `allow`, not `allowed`. We just released this today, so I've switched to `allow` in `sluggo` as well. However I did bump to 0.2.0 to remain faithful to the semver standard.
 
-### CHANGES IN 0.1.2
+### 0.1.2
 
 Converts to lowercase properly.
 
-### CHANGES IN 0.1.1
+### 0.1.1
 
 Packaged correctly to work in either node or the browser.
 
-### CHANGES IN 0.1.0
+### 0.1.0
 
 Initial release.

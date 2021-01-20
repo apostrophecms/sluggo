@@ -65,10 +65,17 @@ var sluggo = function(s, options) {
     }
     lastBad = bad;
   }
+
   // Remove trailing dashes
   if (lastBad) {
     n = n.substr(0, startOfMostRecentRun);
   }
+
+  // Remove accented characters
+  if (options.disallowAccents) {
+    n = n.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
   if (!n.length) {
     // No slug at all is usually bad news for Express wildcard routes, etc.
     n = options.def || 'none';

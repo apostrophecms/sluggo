@@ -72,6 +72,29 @@ Outputs:
 monkey-s-are-elab؉؉orate-fools
 ```
 
+### disallowAccents
+
+Ensures that accented characters are not used in the generated slug.
+
+⚠️ Note that this option uses [`String.prototype.normalize()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize) internally, which means [it is not supported by Internet Explorer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize#browser_compatibility).
+
+```javascript
+const sluggo = require('sluggo');
+
+const s = sluggo(
+  'ÀÂÁÃÅĀ ÈÉËĘĖĒ ÎÏÌÍĮĪ ÒÖÔÓŌ ÙÜÛÚŪ YŸ àâáãåā èéëęėē îïìíįī òöôóō ùüûúū yÿ',
+  { disallowAccents: true }
+);
+
+console.log(s);
+```
+
+Outputs:
+
+```
+aaaaaa-eeeeee-iiiiii-ooooo-uuuuu-yy-aaaaaa-eeeeee-iiiiii-ooooo-uuuuu-yy
+```
+
 ## In the Browser
 
 You just want `sluggo.js`. Add that file to your frontend javascript world.

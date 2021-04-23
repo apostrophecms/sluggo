@@ -71,7 +71,7 @@ var sluggo = function(s, options) {
   }
   if (!n.length) {
     // No slug at all is usually bad news for Express wildcard routes, etc.
-    n = options.def || 'none';
+    n = (options.def == null) ? 'none' : options.def;
   }
   return n;
 };

@@ -90,7 +90,7 @@ Feel free to [open issues on Github](http://github.com/apostrophecms/sluggo/issu
 
 ## Changelog
 
-### 0.3.0 - 2021-04-23
+### 0.3.1 - 2021-04-23
 - Accepts the empty string as a legitimate value for `def`, as was always intended, rather than forcing `none` in that situation. If `def` is not set at all `none` is still the fallback default.
 
 ### 0.3.0 - 2020-01-27

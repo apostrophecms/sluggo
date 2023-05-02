@@ -25,7 +25,7 @@ describe('sluggo', function() {
     var s = sluggo('/', { allow: '/' });
     assert.strictEqual(s, '/');
   });
-  it('Fallback default is none', function() {
+  it('fallback default is none', function() {
     var s = sluggo('@#(*&@', {});
     assert.strictEqual(s, 'none');
     var s = sluggo('', {});
@@ -33,7 +33,7 @@ describe('sluggo', function() {
     var s = sluggo('test', {});
     assert.strictEqual(s, 'test');
   });
-  it('Empty string can be passed as default', function() {
+  it('empty string can be passed as default', function() {
     var s = sluggo('@#(*&@', { def: '' });
     assert.strictEqual(s, '');
     var s = sluggo('', { def: '' });
@@ -41,4 +41,8 @@ describe('sluggo', function() {
     var s = sluggo('test', { def: '' });
     assert.strictEqual(s, 'test');
   });
+  it('allows an array of exceptions', function () {
+    var s = sluggo("/@/slug url", { allow: ['/', '@'] })
+    assert.strictEqual(s, '/@/slug-url')
+  })
 });

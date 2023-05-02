@@ -33,7 +33,7 @@ var sluggo = function(s, options) {
   for (i = 0; (i < s.length); i++) {
     var code = s.charCodeAt(i);
     bad = false;
-    if ((options.allow !== undefined) && (options.allow === s.charAt(i))) {
+    if ((options.allow !== undefined) && (options.allow.includes(s.charAt(i)))) {
       // Make an exception
     } else {
       // efficient binary search for a disallow character code

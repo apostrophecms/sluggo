@@ -90,8 +90,8 @@ Feel free to [open issues on Github](http://github.com/apostrophecms/sluggo/issu
 
 ## Changelog
 
-### Unreleased
-- Accepts an array of exceptions in the `allow` options property while still accepting a string.
+### 1.0.0 - 2023-05-03
+- Accepts an array of exceptions in the `allow` options property while still accepting a string. Declared stable.
 
 ### 0.3.1 - 2021-04-23
 - Accepts the empty string as a legitimate value for `def`, as was always intended, rather than forcing `none` in that situation. If `def` is not set at all `none` is still the fallback default.
